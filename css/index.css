@@ -1,0 +1,116 @@
+
+
+body{
+    background-color: rgb(44, 44, 44);
+}
+
+#logoPrincipal{
+    margin-left: 1rem;
+}
+
+#contenedorIconoPerfil{
+    margin-right: 1.5rem;
+    margin-left: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-outline-light {
+    border-width: 2px; /* Aplica a todos los botones con esta clase */
+}
+
+.contenedorTextoPrincipal{
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+}
+
+#contenedorContenidoPrincipal{
+    display: flex;
+    margin-top: 5rem;
+    align-items: center;
+}
+
+#contenedorFoto{
+    flex: 1;
+}
+
+#contenedorCuadrados{
+    flex: 3;
+    display: flex;
+    margin-bottom: 1vw;
+}
+
+#cuadrado1{
+    width: 17rem;
+    height: 17rem;
+    background-color: #000000;
+    top: 50%;
+    left: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-right: 2rem;
+    transition: box-shadow 0.3s ease;
+}
+
+#cuadrado1:hover {
+    box-shadow: 0 0 15px 5px white;
+}
+
+#cuadrado1,
+#cuadrado2,
+#cuadrado3 {
+    width: 17rem;
+    height: 17rem;
+    background-color: #000000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    opacity: 0;
+    transform: scale(0);
+    animation: aparecer 1s ease forwards;
+    transition: box-shadow 0.3s ease;
+}
+
+#cuadrado1 {
+    margin-right: 2rem;
+    animation-delay: 0s;
+}
+
+#cuadrado2 {
+    margin: 0 2rem;
+    animation-delay: 0.5s;
+}
+
+#cuadrado3 {
+    margin-left: 2rem;
+    animation-delay: 1s;
+}
+
+#cuadrado1:hover,
+#cuadrado2:hover,
+#cuadrado3:hover {
+    box-shadow: 0 0 15px 5px white;
+}
+
+@keyframes aparecer {
+    0% {
+        opacity: 0;
+        transform: scale(0);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.anadirEspacio{
+    height: 10%;
+}
